@@ -1,0 +1,255 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  /*清楚点击阴影：*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  /*清楚按钮圆角：*/
+  -webkit-appearance: none;
+  border-radius: 0;
+  /*选中文字设置：*/
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /*禁止文字缩放：*/
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  /*默认字体设置：*/
+  font-family: Helvetica;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+  display: block;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+/* custom */
+a {
+  text-decoration: none;
+  -webkit-backface-visibility: hidden;
+  color: inherit;
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+div, img, a {
+  border: none;
+}
+
+html, body {
+  width: 100%;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/*  common 样式   */
+
+/* 圆点 */
+.redPoint {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #DF1F0A;
+  margin: 0 8px;
+  float: right;
+}
+
+/* 元素占位 */
+.blank {
+  width: 100%;
+  height: 46px;
+}
+
+.blank_footer {
+  width: 100%;
+  height: 51px;
+}
+
+/* 清楚浮动 */
+.clearfix {
+  clear: both;
+  zoom: 1;
+}
+
+.mr-left-10 {
+  margin-left: 10px;
+}
+
+.fi-f46201 {
+  color: #f46201;
+}
+
+.fi-ffad17 {
+  color: #ffad17;
+}
+
+.fi-499bf7 {
+  color: #499bf7;
+}
+
+.fi-169bd9 {
+  color: #169bd9;
+}
+
+.fi-C90B00 {
+  color: #C90B00;
+}
+
+.fi-eee {
+  color: #c3c2c2;
+}
+
+.fi-e95757 {
+  color: #e95757;
+}
+
+.fi-716f6f {
+  color: #716f6f;
+}
+
+.fi_06BC07 {
+  color: #06BC07;
+}
+
+.bgColor_06BC07 {
+  background-color: #06BC07;
+}
+
+.bgColor_D51505 {
+  background-color: #D51505;
+}
+
+.sellerLevel {
+  float: left;
+  background-size: 28px auto;
+  background-repeat: no-repeat;
+  border-radius: 1px;
+  width: 40%;
+  height: 15px;
+  background-position-x: right;
+}
+
+/* css3动画运动 */
+.fadeInUp {
+  animation-name: upShwo;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.fadeOutDown {
+  animation-name: downHide;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes upShwo {
+  0% {
+    bottom: -100%;
+    opacity: 0;
+  }
+  100% {
+    bottom: 0%;
+    opacity: 1;
+  }
+}
+
+@keyframes downHide {
+  0% {
+    bottom: 0%;
+    opacity: 1;
+  }
+  100% {
+    bottom: -100%;
+    opacity: 0;
+  }
+}
+
+/* 文字省略号 单行 */
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 背景图片自适应 bgCover */
+.bg_cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* 滚动加载的loading样式 */
+.page-infinite-loading {
+  display: flex;
+  width: 50%;
+  transform: translateX(100%);
+  align-items: center;
+  margin-left: -50px;
+}
+
+.page-infinite-loading span {
+  margin-right: 20px;
+}
