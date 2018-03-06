@@ -1,6 +1,6 @@
 # block-chain
 
-> A Vue.js project
+> 一个基于 vue 的简单 区块链模拟
 
 ## Build Setup
 
